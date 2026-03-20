@@ -1,0 +1,183 @@
+/* Style for Bedson Vending website */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header Banner */
+.header {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Banner won't move when you scroll */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Container */
+.header-container {
+  max-width: 1200px; padding: 8px 20px; margin: 0 auto; 
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Logo sizing */
+.logo img {
+  height: 200px; 
+  width: auto;
+  display:flex;
+  align-items: center;
+}
+
+/* Navigation styling */
+.nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight:bold;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+/* Nice hover effect */
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(249, 179, 1); /* gold accent */
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.hero{
+height: 100%;
+background-image: url('images/herobackground.png');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+/* Hero text*/
+.hero-overlay{
+position: relative;
+text-align: center;
+max-width: 700px;
+padding: 20px;
+}
+
+.hero-overlay h1{
+    font-size: 3.0rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(249, 179, 1);
+    text-align: justify;
+    margin-left: 50px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay h3{
+    font-size:1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+/* Services Section */
+.services {
+  background: rgb(249, 179, 1);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.0rem;
+}
+
+.container {
+max-width: 800px;
+margin: auto;
+border: 2px solid #000000;
+border-radius: 10px;
+padding: 40px;
+padding-top: 5px;
+background-color: rgb(255, 255, 255);
+}
+
+.container p{
+    font-size:medium;
+    text-align: left;
+    line-height:1.5;
+
+}
+
+/* Section spacing */
+.image-grid-section {
+  padding: 20px 20px;
+  text-align: center;
+  background: rgba(249, 179, 1, 0.384);
+  padding: 20px 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.0rem;
+}
+
+/* Grid container */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  gap: 75px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/* Images */
+.image-grid img {
+  width: 450px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Label styling */
+.image-item {
+  position: relative;
+}
+
+.image-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Image effects*/
+.image-item img {
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+  transform: scale(1.05);
+}
