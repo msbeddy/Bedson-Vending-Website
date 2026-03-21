@@ -6,7 +6,8 @@
     <meta charset="UTF-8"/>
     <title>Bedson Vending</title>
     <link rel="stylesheet" type="text/css" href="main_style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
 <header class="header">
@@ -17,12 +18,17 @@
     <img src="images/logonobackground.png" alt="Bedson Vending Logo">
 </div>
 
+<!--Hamburger button-->
+<div class="menu-toggle" id="menu-toggle">
+  ☰
+</div>
 <!-- Navigation -->
-<nav class="nav">
+<nav class="nav" id="nav">
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
 </nav>
+
 
 </div>
 </header>
@@ -32,10 +38,15 @@
     <div class="hero-overlay">
     <h1>Reliable Vending Solutions for Your Business</h1>
     <h3>Convenient, high-quality snack and bevarge options for your hardworking team.</h3>
+    <a href="sms:2101234567?body=Hi%20I%27m%20interested%20in%20a%20vending%20machine%20for%20my%20business"
+   class="hero-btn">
+  Text to get your machine.
+</a>
 </div>
 </section>
 
 <!-- Services -->
+ <section id="services">
   <section class="services">
     <div class="container">
      <h3>Our Services</h3>
@@ -53,6 +64,8 @@
        making it easy and convenient for your employees to grab what they want, when they want it.
 
     </div>
+  
+    
   </section>
 
  <section class="machines">
@@ -74,12 +87,62 @@
       </div>
 </div>
 </section>
+</section>
 
- 
+ <!-- About -->
+  <section id="about">
+  <section class="about">
+    <div class="about-container">
+     <!-- Image -->
+    <div class="about-image">
+      <img src="images/owner.jpg" alt="Owner of Bedson Vending">
+    </div>
+    <div class="about-text">
+     <h3>About</h3>
+    <p>
+      Hi, I’m the owner of Bedson Vending, a proudly independent, woman-owned business serving San Antonio. I started this 
+      company with a simple goal: to provide businesses with a vending service that’s reliable, responsive, and tailored to their needs. 
+      I personally care about the quality of service each location receives, from clean machines to products your team actually enjoys. 
+      When you work with Bedson Vending, you’re working directly with someone who is invested in your experience.
+    </div>
+    </div>
+  </section>
+</section>
+
+ <!-- Contact -->
+  <section id="contact">
+  <section class="contact">
+    <div class="contact-container">
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Interested in adding a vending machine to your location?<br>Fill out the form below.</p>
+
+    <form class="contact-form">
+      
+      <input type="text" name="name" placeholder="Your Name" required>
+      
+      <input type="email" name="email" placeholder="Your Email" required>
+      
+      <input type="text" name="business" placeholder="Business Name">
+      
+      <textarea name="message" placeholder="Tell us about your location..." rows="5" required></textarea>
+      
+      <button type="submit">Submit Request</button>
+
+    </form>
+  </div>
+</section>
+</section>
+
+
+
+
+    </div>
+   
+  </section>
   
 
-
-
-
+<script src="script.js"></script>
 </body>
 </html>
